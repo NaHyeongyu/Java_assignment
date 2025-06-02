@@ -70,11 +70,11 @@ class Ltab extends Mobile{
 	Ltab(String name, int size, String type){
 		super(name, size, type);
 	}
-	
+	@Override
 	public void charge(int time) {
 		batterySize += time*10;
 	}
-	
+	@Override
 	public void operate(int time) {
 		batterySize -= time*10;
 	}
@@ -90,11 +90,11 @@ class Otab extends Mobile{
 	Otab(String name, int size, String type){
 		super(name, size, type);
 	}
-	
+	@Override
 	public void charge(int time) {
 		batterySize += time*8;
 	}
-	
+	@Override
 	public void operate(int time) {
 		batterySize -= time*12;
 	}
